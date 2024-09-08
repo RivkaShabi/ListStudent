@@ -1,0 +1,63 @@
+[
+    {
+      "ID": 1,
+      "Name": "John Doe",
+      "Grade": 85,
+      "Email": "john.doe@example.com",
+      "DateJoin": "2021-09-01",
+      "Address": "123 Main St",
+      "City": "New York",
+      "Country": "USA",
+      "Zip": "10001",
+      "Subject": "Mathematics"
+    },
+    {
+      "ID": 2,
+      "Name": "Jane Smith",
+      "Grade": 90,
+      "Email": "jane.smith@example.com",
+      "DateJoin": "2022-01-15",
+      "Address": "456 Oak Ave",
+      "City": "Los Angeles",
+      "Country": "USA",
+      "Zip": "90001",
+      "Subject": "Physics"
+    },
+    {
+      "ID": 3,
+      "Name": "Michael Brown",
+      "Grade": 78,
+      "Email": "michael.brown@example.com",
+      "DateJoin": "2021-05-10",
+      "Address": "789 Pine Rd",
+      "City": "Chicago",
+      "Country": "USA",
+      "Zip": "60601",
+      "Subject": "Chemistry"
+    },
+    {
+      "ID": 4,
+      "Name": "Emily Davis",
+      "Grade": 92,
+      "Email": "emily.davis@example.com",
+      "DateJoin": "2023-02-20",
+      "Address": "321 Maple St",
+      "City": "Houston",
+      "Country": "USA",
+      "Zip": "77001",
+      "Subject": "Biology"
+    },
+    {
+      "ID": 5,
+      "Name": "Daniel Wilson",
+      "Grade": 88,
+      "Email": "daniel.wilson@example.com",
+      "DateJoin": "2022-08-18",
+      "Address": "654 Elm St",
+      "City": "San Francisco",
+      "Country": "USA",
+      "Zip": "94101",
+      "Subject": "History"
+    }
+  ]
+  

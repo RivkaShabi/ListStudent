@@ -1,0 +1,40 @@
+
+  <mat-card>  <div class="analysis-container">
+        <div class="filter-section">
+          <mat-form-field appearance="outline">
+            <mat-label>IDs</mat-label>
+            <mat-select multiple [(ngModel)]="selectedIDs"  (selectionChange)="calculateStudentSelectedAverages()">
+              <mat-option *ngFor="let id of studentIds" [value]="id" >{{ id }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Subjects</mat-label>
+            <mat-select multiple [(ngModel)]="selectedSubjects"  (selectionChange)="calculateSubjectSelectedAverages()">
+              <mat-option *ngFor="let subject of subjectNames" [value]="subject">{{ subject }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      
+        <div class="container" cdkDropList (cdkDropListDropped)="onDrop($event)">
+         <div class="div2" *ngIf="!draggedDiv || draggedDiv !== 'div2'" cdkDrag> <app-chart 
+            [title]="'Student Averages'"
+            [arrGraph1]="studentAvgValues"
+            [arrDate]="studentIds"
+            [txtGraph1]="'Average Grades per Student'"  ></app-chart>
+          </div> <div class="div1" *ngIf="!draggedDiv || draggedDiv !== 'div1'" cdkDrag><app-chart 
+            [title]="'Averages Subject Selected '"
+            [arrGraph1]="subjectAvgValuesSelected"
+            [arrDate]="subjectNamesSelected"
+            [txtGraph1]="'Average Grades per Subject'"
+            ></app-chart></div>
+          
+          <div class="div3" *ngIf="!draggedDiv || draggedDiv !== 'div3'" cdkDrag> <app-chart
+            [title]="'Averages Student Selected '"
+            [arrGraph1]="studentAvgValuesSelected"
+            [arrDate]="studentIdsSelected"
+            [txtGraph1]="'Average Grades per Student'"></app-chart></div>
+        </div></div>
+
+      
+
+  </mat-card>  

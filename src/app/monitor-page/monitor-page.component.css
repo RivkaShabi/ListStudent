@@ -1,0 +1,30 @@
+.monitor-container {
+    padding: 16px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .table-avg{
+    min-width:70% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+  .passed {
+    background-color: green;
+    color: white;
+  }
+  
+  .failed {
+    background-color: red;
+    color: white;
+  }
+
+  
+mat-card{
+  padding: 20px;
+  margin: 20px;
+  background-color: #f0f8ff;
+}
